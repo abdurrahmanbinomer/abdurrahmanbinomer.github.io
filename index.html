@@ -7,39 +7,42 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Simple fixed header with navigation -->
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
-        <a href="#hero">ABO</a>
+        <a href="index.html#hero">ABO</a>
       </div>
 
-      <!-- Mobile menu button -->
       <button class="menu-toggle" aria-label="Toggle navigation">
         ☰
       </button>
 
-      <!-- Navigation links -->
       <nav>
         <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="calisthenics.html">Calisthenics</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section with typing headline -->
     <section id="hero" class="section hero">
       <div class="container hero-inner">
         <p class="hero-eyebrow">Hello, I'm</p>
         <h1 class="hero-title">Abdurrahman Bin Omer</h1>
-        <p class="hero-subtitle">
-          Computer Science student interested in software development and problem solving.
+        <p class="hero-subtitle hero-typer-wrap">
+          <!-- Ghost text keeps final layout width (prevents layout shift while typing) -->
+          <span class="typer-area">
+            <span class="typer-ghost">Computer Science • Software development • Problem solving • Calisthenics</span>
+            <span class="typer-live-wrap" aria-label="Typing headline">
+              <span id="hero-typer"></span><span class="typer-cursor" aria-hidden="true"></span>
+            </span>
+          </span>
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn primary-btn">View Projects</a>
@@ -55,59 +58,33 @@
         <p class="section-text">
           I am a Computer Science student with a strong interest in building reliable software
           and solving challenging problems. I enjoy learning new technologies, writing clean and
-          readable code, and turning ideas into working projects. I am always looking for
+          readable code, and turning ideas into working projects. Outside of coding, I train
+          calisthenics and care about staying active and building strength. I am always looking for
           opportunities to grow as a developer and collaborate on meaningful work.
         </p>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - single Workout Planner project -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-grid projects-grid-single">
           <article class="project-card">
-            <h3 class="project-title">Project One</h3>
+            <h3 class="project-title">Workout Planner (Version 1)</h3>
             <p class="project-description">
-              A simple project description goes here. Briefly explain the goal and what you built.
+              A simple terminal-based Workout Planner in Python that uses the Google Gemini API to generate a weekly workout plan. Single <code>main.py</code>, plain Python, runs in the terminal — minimal and beginner-friendly.
             </p>
-            <a href="#" class="project-link">View on GitHub</a>
+            <div class="project-actions">
+              <a href="workout-planner.html" class="btn ghost-btn">Learn more</a>
+            </div>
           </article>
-
-          <article class="project-card">
-            <h3 class="project-title">Project Two</h3>
-            <p class="project-description">
-              Another project example. You can replace this with your own work and repository link.
-            </p>
-            <a href="#" class="project-link">View on GitHub</a>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-title">Project Three</h3>
-            <p class="project-description">
-              A small project that showcases your problem solving or algorithmic skills.
-            </p>
-            <a href="#" class="project-link">View on GitHub</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-list">
-          <span class="skill-badge">Python</span>
-          <span class="skill-badge">C++</span>
-          <span class="skill-badge">Git</span>
-          <span class="skill-badge">Problem Solving</span>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <p class="section-text">
@@ -115,9 +92,8 @@
         </p>
         <p class="section-text">
           Email:
-          <!-- Replace this email with your real one -->
-          <a href="mailto:youremail@example.com" class="contact-email">
-            youremail@example.com
+          <a href="mailto:abdurrahmanbinomer023@gmail.com" class="contact-email">
+            abdurrahmanbinomer023@gmail.com
           </a>
         </p>
       </div>
