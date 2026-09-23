@@ -22,20 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // --- Hero typing effect (ChatGPT-style) ---
+  // --- Hero typing effect ---
   var typerEl = document.getElementById("hero-typer");
   if (!typerEl) return;
 
+  var cursorEl = document.querySelector(".typer-cursor");
   var fullText = "Computer Science • Software development • Problem solving • Calisthenics";
   var index = 0;
   var typingSpeed = 45;
   var delayBeforeStart = 600;
+  var hideCursorDelay = 400;
 
   function typeNext() {
     if (index <= fullText.length) {
       typerEl.textContent = fullText.slice(0, index);
       index++;
       setTimeout(typeNext, typingSpeed);
+    } else if (cursorEl) {
+      setTimeout(function () {
+        cursorEl.classList.add("typer-cursor--hidden");
+      }, hideCursorDelay);
     }
   }
 

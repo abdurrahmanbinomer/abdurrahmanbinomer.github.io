@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdurrahman Bin Omer — undergraduate Computer Science student. Portfolio, projects, and contact." />
   <title>Abdurrahman Bin Omer | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -29,13 +33,12 @@
   </header>
 
   <main>
-    <!-- Hero Section with typing headline -->
     <section id="hero" class="section hero">
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Hello, I'm</p>
+        <p class="hero-eyebrow">Portfolio</p>
         <h1 class="hero-title">Abdurrahman Bin Omer</h1>
+        <p class="hero-role">Undergraduate student, majoring in Computer Science</p>
         <p class="hero-subtitle hero-typer-wrap">
-          <!-- Ghost text keeps final layout width (prevents layout shift while typing) -->
           <span class="typer-area">
             <span class="typer-ghost">Computer Science • Software development • Problem solving • Calisthenics</span>
             <span class="typer-live-wrap" aria-label="Typing headline">
@@ -44,35 +47,41 @@
           </span>
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn primary-btn">View Projects</a>
-          <a href="#contact" class="btn ghost-btn">Contact Me</a>
+          <a href="#projects" class="btn primary-btn">View projects</a>
+          <a href="#contact" class="btn ghost-btn">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
-      <div class="container">
+      <div class="container about-layout">
         <h2 class="section-title">About</h2>
-        <p class="section-text">
-          I am a Computer Science student with a strong interest in building reliable software
-          and solving challenging problems. I enjoy learning new technologies, writing clean and
-          readable code, and turning ideas into working projects. Outside of coding, I train
-          calisthenics and care about staying active and building strength. I am always looking for
-          opportunities to grow as a developer and collaborate on meaningful work.
-        </p>
+        <div class="about-copy">
+          <p class="section-text">
+            I am an undergraduate student majoring in Computer Science. I care about building
+            reliable software, writing clear code, and turning ideas into working projects.
+          </p>
+          <p class="section-text">
+            I enjoy learning new technologies and solving challenging problems. Outside of coursework,
+            I train calisthenics and stay focused on consistency — in the gym and in software.
+            I am always looking for opportunities to grow as a developer and collaborate on
+            meaningful work.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Projects Section - single Workout Planner project -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid projects-grid-single">
           <article class="project-card">
+            <p class="project-meta">Python · Gemini API</p>
             <h3 class="project-title">Workout Planner (Version 1)</h3>
             <p class="project-description">
-              A simple terminal-based Workout Planner in Python that uses the Google Gemini API to generate a weekly workout plan. Single <code>main.py</code>, plain Python, runs in the terminal — minimal and beginner-friendly.
+              A terminal-based workout planner in Python that uses the Google Gemini API to generate
+              a weekly plan. A single <code>main.py</code> file, plain Python, runs in the terminal —
+              kept small and beginner-friendly on purpose.
             </p>
             <div class="project-actions">
               <a href="workout-planner.html" class="btn ghost-btn">Learn more</a>
@@ -82,26 +91,26 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
-      <div class="container">
+      <div class="container about-layout">
         <h2 class="section-title">Contact</h2>
-        <p class="section-text">
-          Feel free to reach out if you would like to collaborate, discuss an idea, or just say hello.
-        </p>
-        <p class="section-text">
-          Email:
-          <a href="mailto:abdurrahmanbinomer023@gmail.com" class="contact-email">
-            abdurrahmanbinomer023@gmail.com
-          </a>
-        </p>
+        <div class="about-copy">
+          <p class="section-text">
+            Feel free to reach out if you would like to collaborate, discuss an idea, or just say hello.
+          </p>
+          <p class="section-text">
+            <a href="mailto:abdurrahmanbinomer023@gmail.com" class="contact-email">
+              abdurrahmanbinomer023@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Abdurrahman Bin Omer. All rights reserved.</p>
+      <p>© <span id="year"></span> Abdurrahman Bin Omer</p>
     </div>
   </footer>
 
